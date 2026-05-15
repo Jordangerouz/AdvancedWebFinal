@@ -25,6 +25,23 @@ scrollToTopButton.addEventListener('click', () => {
     });
 });
 
+const AboutMeButton = document.getElementById('about-me');
+
+AboutMeButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 800,
+        behavior: 'smooth'
+    });
+});
+
+const ContactButton = document.getElementById('contact-me');
+
+ContactButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 2000,
+        behavior: 'smooth'
+    });
+});
 // jquery ui ----------------------------------------
 $("#accordion").accordion({
   collapsible: true, // Allow all sections to be closed

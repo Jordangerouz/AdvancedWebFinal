@@ -63,12 +63,18 @@ nav .list {
   width: 60vw;
 }
 nav .list li {
+  cursor: pointer;
   list-style-type: none;
   text-decoration: none;
   font-family: "nunito";
   font-variation-settings: "wght" 500;
   font-size: 2rem;
   color: #000000;
+  transition: all 300ms ease-in-out;
+}
+nav .list li:hover {
+  color: #24e20f;
+  font-size: 2.25rem;
 }
 nav .logo {
   height: -moz-max-content;
@@ -124,6 +130,7 @@ nav .logo {
   height: -moz-min-content;
   height: min-content;
   width: 40%;
+  max-width: 530px;
 }
 .about .me .words {
   display: flex;
@@ -142,10 +149,12 @@ nav .logo {
   justify-content: center;
   align-items: center;
   height: 70%;
+  padding: 40px;
 }
 .about .likes h2 {
   font-family: "nunito";
   font-variation-settings: "wght" 500;
+  margin-bottom: 40px;
 }
 .about .likes .likes-holder {
   display: flex;
@@ -159,11 +168,79 @@ nav .logo {
   animation-timing-function: linear;
 }
 .about .likes .likes-holder .like-card {
-  width: 20%;
+  width: 15%;
   height: 30%;
+  transition: all 400ms ease-in-out;
 }
 .about .likes .likes-holder .like-card img {
   height: -moz-max-content;
   height: max-content;
   width: 100%;
+}
+.about .likes .likes-holder .like-card:hover {
+  scale: 1.2;
+}
+
+.experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.experience .accord {
+  width: 50%;
+}
+.experience .accord h1 {
+  justify-self: center;
+  font-family: "nunito";
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+.contact-form .divider {
+  height: 8vh;
+  background-color: #37af29;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contact-form .divider h1 {
+  font-family: "nunito";
+  font-variation-settings: "wght" 700;
+}
+.contact-form .contact-contents {
+  display: flex;
+  width: 80%;
+  background-color: #ffffff;
+  box-shadow: black 5px 5px 30px;
+}
+.contact-form .contact-contents .image {
+  width: 70%;
+  background-image: url(assets/laptopandplant.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.contact-form .contact-contents .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+}
+.contact-form .contact-contents .form form input {
+  width: 100%;
+}
+.contact-form .contact-contents .form form #submit {
+  background-color: #24e20f;
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+  border-radius: 0px 10px 0px 10px;
 }/*# sourceMappingURL=style.css.map */
