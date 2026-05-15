@@ -15,18 +15,41 @@ body {
         transform: rotate(360deg);
     }
 }
-.test {
-    border: white thick solid;
-    width: 20em;
-    height: 20em;
-    border-radius: 50%;
-    border-top: blue thick solid;
-    animation-name: spin;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+
+
+// .test {
+//     border: white thick solid;
+//     width: 20em;
+//     height: 20em;
+//     border-radius: 50%;
+//     border-top: blue thick solid;
+//     animation-name: spin;
+//     animation-duration: 2s;
+//     animation-iteration-count: infinite;
+//     animation-timing-function: linear;
+// }
+// img {
+//     height:max-content;
+//     width: 100%;
+// }
+
+// Carousel stuff -------------------------
+#car-holder {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
 }
-img {
-    height:max-content;
-    width: 100%;
+#slider {
+  width: 1000px;
+}
+.carousel-caption {
+  bottom: 50%;
+  transform: translate(0, 50%);
+}
+.carousel-caption h5 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: white;
+  background: rgba(0, 0, 0, 0.342);
+  
 }
