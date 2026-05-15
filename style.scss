@@ -53,10 +53,9 @@ $secondary-green: #24e20f;
   position: fixed;
   bottom: 20px;
   right: 20px;
-//   display: none;
+  display: none;
   background-color: $secondary-green;
   color: rgb(0, 0, 0);
-//   padding: 10px 15px;
   border: 1px solid black;
   border-radius: 0px 10px 0px 10px;
   cursor: pointer;
@@ -77,8 +76,6 @@ nav {
     justify-content:space-between;
     align-items: center;
     padding-left: 40px;
-    // box-shadow: 0px 5px 30px black;
-    // margin-bottom: 30px;
     .list {
         display: flex;
         justify-content: space-around;
@@ -121,3 +118,76 @@ nav {
   
 }
 // carousel stuff end -----------------------
+
+// about me start ---------------------------
+.about {
+    margin-top: 40px;
+    .divider {
+        height: 8vh;
+        background-color: $primary-green;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-family: 'nunito';
+            font-variation-settings: 'wght' 700;
+        }
+    }
+    .me {
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        img {
+            height: min-content;
+            width: 40%;
+        }
+        .words {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            padding-right: 20px;
+            p {
+                font-family: 'nunito';
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .likes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+        h2 {
+            font-family: 'nunito';
+            font-variation-settings: 'wght' 500;
+
+        }
+        .likes-holder {
+            display: flex;
+            justify-content: space-around;
+            height: 60%;
+            #vinyl {
+                    animation-name: spin;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+
+            }
+            .like-card {
+                // background-color: #ffffff;
+                width: 20%;
+                height: 30%;
+                img {
+                    height: max-content;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+// about me end -----------------------------

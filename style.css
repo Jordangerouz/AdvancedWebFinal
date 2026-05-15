@@ -32,6 +32,7 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  display: none;
   background-color: #24e20f;
   color: rgb(0, 0, 0);
   border: 1px solid black;
@@ -95,4 +96,74 @@ nav .logo {
   font-weight: 700;
   color: white;
   background: rgba(0, 0, 0, 0.342);
+}
+
+.about {
+  margin-top: 40px;
+}
+.about .divider {
+  height: 8vh;
+  background-color: #37af29;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .divider h1 {
+  font-family: "nunito";
+  font-variation-settings: "wght" 700;
+}
+.about .me {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.about .me img {
+  height: -moz-min-content;
+  height: min-content;
+  width: 40%;
+}
+.about .me .words {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  padding-right: 20px;
+}
+.about .me .words p {
+  font-family: "nunito";
+  font-size: 1.2rem;
+}
+.about .likes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+.about .likes h2 {
+  font-family: "nunito";
+  font-variation-settings: "wght" 500;
+}
+.about .likes .likes-holder {
+  display: flex;
+  justify-content: space-around;
+  height: 60%;
+}
+.about .likes .likes-holder #vinyl {
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.about .likes .likes-holder .like-card {
+  width: 20%;
+  height: 30%;
+}
+.about .likes .likes-holder .like-card img {
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
