@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: whitesmoke;
 }
-// Animation Spin 
+// Variables -----------------------
+$primary-green: #54b948;
+// Animation Spin -------------------
 @keyframes spin {
     from {
         transform: rotate(0deg);
@@ -15,7 +17,6 @@ body {
         transform: rotate(360deg);
     }
 }
-
 
 // .test {
 //     border: white thick solid;
@@ -32,12 +33,35 @@ body {
 //     height:max-content;
 //     width: 100%;
 // }
-
+nav {
+    height: 20vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 40px;
+    // box-shadow: 0px 5px 30px black;
+    // margin-bottom: 30px;
+    .list {
+        display: flex;
+        justify-content: space-around;
+        width: 60vw;
+        li {
+            list-style-type: none;
+            text-decoration: none;
+        }
+    }
+    
+    .logo {
+        height: max-content;
+        width: 30%;
+    }
+}
 // Carousel stuff -------------------------
 #car-holder {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+//   padding-bottom: 30px;
 }
 #slider {
   width: 1000px;
@@ -53,3 +77,4 @@ body {
   background: rgba(0, 0, 0, 0.342);
   
 }
+// carousel stuff end -----------------------

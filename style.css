@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: whitesmoke;
 }
 
 @keyframes spin {
@@ -16,10 +16,32 @@ body {
     transform: rotate(360deg);
   }
 }
+nav {
+  height: 20vh;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+}
+nav .list {
+  display: flex;
+  justify-content: space-around;
+  width: 60vw;
+}
+nav .list li {
+  list-style-type: none;
+  text-decoration: none;
+}
+nav .logo {
+  height: -moz-max-content;
+  height: max-content;
+  width: 30%;
+}
+
 #car-holder {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
 }
 
 #slider {
