@@ -8,6 +8,20 @@ body {
 }
 // Variables -----------------------
 $primary-green: #54b948;
+// FONT ----------------------------
+@font-face {
+    font-family: 'recursive';
+    src: url(fonts/Recursive/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
+    font-weight: 300 1000;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'nunito';
+    src: url(fonts/Nunito/Nunito-VariableFont_wght.ttf);
+    font-weight: 200 1000;
+    font-style: normal;
+}
+
 // Animation Spin -------------------
 @keyframes spin {
     from {
@@ -33,6 +47,32 @@ $primary-green: #54b948;
 //     height:max-content;
 //     width: 100%;
 // }
+.testing {
+    height: 700vh;
+    background-color: aqua;
+}
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #1eff00;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: 5px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+  height: 10%;
+  width: 10%;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#scroll-to-top:hover {
+  opacity: 1;
+}
 nav {
     height: 20vh;
     background-color: whitesmoke;
@@ -49,6 +89,11 @@ nav {
         li {
             list-style-type: none;
             text-decoration: none;
+            // font-family: 'recursive';
+            font-family: 'nunito';
+            font-variation-settings: 'wght' 500;
+            font-size: 2rem;
+            color: #000000;
         }
     }
     

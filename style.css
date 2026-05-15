@@ -8,6 +8,18 @@ body {
   background-color: whitesmoke;
 }
 
+@font-face {
+  font-family: "recursive";
+  src: url(fonts/Recursive/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
+  font-weight: 300 1000;
+  font-style: normal;
+}
+@font-face {
+  font-family: "nunito";
+  src: url(fonts/Nunito/Nunito-VariableFont_wght.ttf);
+  font-weight: 200 1000;
+  font-style: normal;
+}
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -16,6 +28,34 @@ body {
     transform: rotate(360deg);
   }
 }
+.testing {
+  height: 700vh;
+  background-color: aqua;
+}
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #1eff00;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: 5px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+  height: 10%;
+  width: 10%;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#scroll-to-top:hover {
+  opacity: 1;
+}
+
 nav {
   height: 20vh;
   background-color: whitesmoke;
@@ -32,6 +72,10 @@ nav .list {
 nav .list li {
   list-style-type: none;
   text-decoration: none;
+  font-family: "nunito";
+  font-variation-settings: "wght" 500;
+  font-size: 2rem;
+  color: #000000;
 }
 nav .logo {
   height: -moz-max-content;
