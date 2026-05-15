@@ -7,7 +7,8 @@ body {
     background-color: whitesmoke;
 }
 // Variables -----------------------
-$primary-green: #54b948;
+$primary-green: #37af29;
+$secondary-green: #24e20f;
 // FONT ----------------------------
 @font-face {
     font-family: 'recursive';
@@ -47,31 +48,27 @@ $primary-green: #54b948;
 //     height:max-content;
 //     width: 100%;
 // }
-.testing {
-    height: 700vh;
-    background-color: aqua;
-}
+
 #scroll-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  display: none;
-  background-color: #1eff00;
+//   display: none;
+  background-color: $secondary-green;
   color: rgb(0, 0, 0);
-  padding: 10px 15px;
-  border: 5px solid black;
-  border-radius: 5px;
+//   padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 0px 10px 0px 10px;
   cursor: pointer;
-  opacity: 0.6;
   transition: opacity 0.3s;
-  height: 10%;
-  width: 10%;
-  font-weight: bold;
-  font-size: 1.5rem;
+  height: 5%;
+  width: 15%;
+  font-family: 'recursive';
+  font-variation-settings: 'wght' 600;
 }
 
 #scroll-to-top:hover {
-  opacity: 1;
+  opacity: 0.6;
 }
 nav {
     height: 20vh;
@@ -100,6 +97,7 @@ nav {
     .logo {
         height: max-content;
         width: 30%;
+        min-width: 280px;
     }
 }
 // Carousel stuff -------------------------

@@ -25,3 +25,9 @@ scrollToTopButton.addEventListener('click', () => {
     });
 });
 
+// jquery ui ----------------------------------------
+$("#accordion").accordion({
+  collapsible: true, // Allow all sections to be closed
+  active: false,      // Start with all sections closed
+  heightStyle: "content" // Adjust height based on content
+});
